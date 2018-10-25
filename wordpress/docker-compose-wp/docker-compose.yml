@@ -1,0 +1,21 @@
+wp:
+ image: wordpress
+ links:
+   - mysql:mysql
+ ports:
+   - "80"
+ volumes_from:
+   - passdata
+mysql:
+ image: mysql
+ volumes_from:
+   - passdata
+ environment:
+   - MYSQL_ROOT_PASSWORD=password
+passdata:
+ image: storage01
+ command: tail -f /dev/null
+ 
+
+
+
