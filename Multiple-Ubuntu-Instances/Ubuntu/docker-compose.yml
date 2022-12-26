@@ -1,0 +1,60 @@
+version: "3"
+services:
+  ubuntuimage:
+    build: .
+    image: ubuntu-ssh:1.0
+      
+  Ubuntu1:
+       hostname: ubuntu1
+       container_name: ubuntu1
+       image: ubuntu-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu2:
+       hostname: ubuntu2
+       container_name: ubuntu2
+       image: ubuntu-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu3:
+       hostname: ubuntu3
+       container_name: ubuntu3
+       image: ubuntu-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu4:
+       hostname: ubuntu4
+       container_name: ubuntu4
+       image: ubuntu-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu5:
+       hostname: ubuntu5
+       container_name: ubuntu5
+       image: ubuntu-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+networks:
+ diveinto.io:
+       name: diveinto.io
+
