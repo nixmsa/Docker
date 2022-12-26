@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: mariadb
+    volumes:
+      - /var/lib/docker/disk01:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: redhat64
+      MYSQL_USER: mahsan
+      MYSQL_PASSWORD: redhat
+      MYSQL_DATABASE: msa_db
+    ports:
+      - "3306:3306"
+  web:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - /var/lib/docker/disk02:/var/www/html
