@@ -1,0 +1,60 @@
+version: "3"
+services:
+  Centosimage:
+    build: .
+    image: centos-ssh:1.0
+      
+  Ubuntu1:
+       hostname: centos1
+       container_name: centos1
+       image: centos-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu2:
+       hostname: centos2
+       container_name: centos2
+       image: centos-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu3:
+       hostname: centos3
+       container_name: centos3
+       image: centos-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu4:
+       hostname: centos4
+       container_name: centos4
+       image: centos-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+  Ubuntu5:
+       hostname: centos5
+       container_name: centos5
+       image: centos-ssh:1.0
+       ports:
+       - 22:22
+       privileged: true
+       networks:
+       - diveinto.io
+
+networks:
+ diveinto.io:
+       name: diveinto.io
+
