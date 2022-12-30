@@ -1,7 +1,7 @@
 # Docer
 
 
-<sub>
+<pre>
 
 version: "3"
 services:
@@ -64,5 +64,5 @@ networks:
        name: diveinto.io
 
 
-</sub>
+</pre>
 
