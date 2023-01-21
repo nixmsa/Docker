@@ -1,6 +1,6 @@
 <pre>
-
-mahsan@u22dsktop:~/Notes/Docker$ cat docker-installation 
+<h1> Docker Desktop </h1>
+<b> Docker installation CLI </b>
 root@u22dsktop:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
 File '/etc/apt/trusted.gpg.d/docker-archive-keyring.gpg' exists. Overwrite? (y/N) y
 root@u22dsktop:~# ls -ltr
