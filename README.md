@@ -240,7 +240,7 @@ Use 'sudo apt autoremove' to remove it.
 0 upgraded, 0 newly installed, 0 to remove and 249 not upgraded.
 mahsan@u22dsktop:~$
 
-
+</pre>
 
 
 ## Docker ##
@@ -272,4 +272,3 @@ mahsan@u22dsktop:~$
 ![Alt text](d26.png "Optional title")
 ![Alt text](d27.png "Optional title")
 
-</pre>
