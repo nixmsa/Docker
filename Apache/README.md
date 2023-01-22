@@ -1,3 +1,6 @@
+<h1> Apache Docker Container</h1>
+<pre>
+
 mahsan@u22:~/Docker/Apache$ mysql -h 127.0.0.1 -u root -p -e "show variables like 'hostname';"
 Enter password:
 +---------------+--------------+
@@ -54,4 +57,4 @@ Going to remove apache_db_1
 Are you sure? [yN] y
 Removing apache_db_1 ... done
 mahsan@u22:~/Docker/Apache$
-
+</pre>
